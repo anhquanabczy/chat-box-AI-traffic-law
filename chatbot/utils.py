@@ -139,11 +139,10 @@ def embed_legal_chunks(file_paths, model):
 
     if not texts_to_embed: return [], None
     try:
-        # Vẫn nên thêm batch_size=8 hoặc 4 để giảm tải cho Kaggle nhé
-        embeddings = model.encode(texts_to_embed, batch_size=4, show_progress_bar=False, convert_to_numpy=True)
+        embeddings = model.encode(texts_to_embed, show_progress_bar=False, convert_to_numpy=True)
         return valid_chunks, embeddings.astype('float32')
     except Exception as e:
-        raise e  
+        return [], None
 
 # --- Generation utils ---
 @st.cache_data 
@@ -341,4 +340,3 @@ def log_qa_to_json(user_query, chatbot_response, filepath=None):
     data.append(new_entry)
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-
