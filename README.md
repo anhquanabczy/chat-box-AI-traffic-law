@@ -11,7 +11,6 @@
   - [Cài đặt](#cài-đặt)
   - [Sử dụng](#sử-dụng)
 - [Nguồn dữ liệu](#nguồn-dữ-liệu)
-- [Giấy phép](#giấy-phép)
 
 ---
 ![Tổng quan về chatbot luật giao thông đường bộ Việt Nam](images/chat.png)
