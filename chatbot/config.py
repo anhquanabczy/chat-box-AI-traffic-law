@@ -30,14 +30,14 @@ AVAILABLE_GEMINI_MODELS = [
 DEFAULT_GEMINI_MODEL = 'gemini-2.0-flash'
 
 # --- Cấu hình Đường dẫn ---
-SAVED_DATA_DIR = '/kaggle/working/CS431.P22/loader'
+SAVED_DATA_DIR = '/kaggle/working/chat-box-AI-traffic/loader'
 SAVED_DATA_PREFIX = os.path.join(SAVED_DATA_DIR, 'legal_rag_data') 
 QA_LOG_FILE = os.path.join(SAVED_DATA_DIR, 'chatbot_qa_log.json')
 MAP_URL_PATH = os.path.join(SAVED_DATA_DIR, 'vanban_url_map.json')
-TRAFFIC_SIGN_IMAGES_ROOT_DIR = '/kaggle/working/CS431.P22/traffic_sign'
+TRAFFIC_SIGN_IMAGES_ROOT_DIR = '/kaggle/working/chat-box-AI-traffic/traffic_sign'
 
 # Xác định đường dẫn dữ liệu JSON
-JSON_DATA_PATH = '/kaggle/working/CS431.P22/datasets/corpus'
+JSON_DATA_PATH = '/kaggle/working/chat-box-AI-traffic/datasets/corpus'
 JSON_FILE_PATTERN = os.path.join(JSON_DATA_PATH, 'legal_{i}.json')
 NUM_FILES = 51 
 NUMBERS_TO_SKIP = {29, 30, 37, 38, 39, 40}
