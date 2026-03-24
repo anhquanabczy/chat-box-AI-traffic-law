@@ -99,7 +99,7 @@ Vietnam-Traffic-Law-Chatbot/
 
 ```python
 # Tải project từ GitHub
-!git clone https://github.com/leeminsun1205/CS431.P22
+!git clone https://github.com/anhquanabczy/chat-box-AI-traffic-law
 %cd CS431.P22/chatbot
 ```
 ```python
