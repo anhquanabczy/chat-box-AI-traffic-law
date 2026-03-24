@@ -12,7 +12,7 @@ DEFAULT_SECONDARY_EMBEDDING_MODEL = 'truro7/vn-law-embedding'
 
 AVAILABLE_RERANKER_MODELS = [
     'BAAI/bge-reranker-v2-m3',
-    'thanhtantran/Vietnamese_Reranker'
+    'thanhtantran/Vietnamese_Reranker',
     'namdp-ptit/ViRanker',
     'Không sử dụng', 
 ]
