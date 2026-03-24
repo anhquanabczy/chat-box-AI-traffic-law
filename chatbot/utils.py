@@ -139,20 +139,11 @@ def embed_legal_chunks(file_paths, model):
 
     if not texts_to_embed: return [], None
     try:
-        # Thêm batch_size=4 (hoặc 8, 16) để bge-m3 không bị quá tải bộ nhớ
-        # Thêm show_progress_bar=True để bạn nhìn thấy nó đang chạy đến đâu
-        embeddings = model.encode(
-            texts_to_embed, 
-            batch_size=8, # <-- Giảm xuống 4 hoặc 2 nếu máy vẫn báo lỗi RAM
-            show_progress_bar=True, 
-            convert_to_numpy=True
-        )
+        # Vẫn nên thêm batch_size=8 hoặc 4 để giảm tải cho Kaggle nhé
+        embeddings = model.encode(texts_to_embed, batch_size=4, show_progress_bar=False, convert_to_numpy=True)
         return valid_chunks, embeddings.astype('float32')
-    
     except Exception as e:
-        # IN LỖI RA MÀN HÌNH ĐỂ DEBUG 👇
-        print(f"\n[LỖI NGHIÊM TRỌNG] Quá trình encode thất bại: {e}")
-        return [], None
+        raise e  
 
 # --- Generation utils ---
 @st.cache_data 
