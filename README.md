@@ -176,9 +176,4 @@ Nguồn trực tiếp từ: [Thư viện pháp luật](https://thuvienphapluat.v
 
 ---
 ## Giới hạn: 
-Hiện tại vì vấn đề tài nguyên nên dự án này được thiết kế để chạy trên Kaggle.
-
-
-## 📄 Giấy phép
-
-[MIT License](LICENSE)
+Hiện tại vì vấn đề tài nguyên nên dự án này được thiết kế để chạy trên Kaggle.ense](LICENSE)
